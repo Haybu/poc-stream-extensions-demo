@@ -1,8 +1,11 @@
 # Demo to run Spring Cloud Stream with Avro Schema and Idempotency using Kafka binder
 
-This demo uses Spring Cloud Stream to illustrate message schema evolution 
-and idempotency interception pattern 
-to detect duplicate messages. The stream use case is for illustration 
+This demo uses Spring Cloud Stream to illustrate message schema evolution, 
+idempotency interception pattern to detect duplicate messages and shows how to
+enrich a message from data obtain from external web service. Spring retry with
+circuit breaker is used when invoke external services in case something goes wrong.
+
+The stream use case is for illustration 
 purpose only, it uses Kafka as a binder message broker. 
 
 To run the stream applications, clone this repository, build all modules using
