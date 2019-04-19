@@ -11,11 +11,11 @@
 	</parent>
 
 	<groupId>io.agilehandy</groupId>
-	<artifactId>poc-message-idempotency-demo</artifactId>
+	<artifactId>poc-stream-extensions-demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
-	<name>poc-message-idempotency-demo</name>
+	<name>poc-stream-extensions-demo</name>
 	<description>Demo project to show idempotency using spring cloud stream</description>
 
 	<properties>

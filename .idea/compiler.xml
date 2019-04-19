@@ -19,7 +19,7 @@
       <module name="common-models" target="1.8" />
       <module name="duplicate-processor" target="1.8" />
       <module name="enrich-processor" target="1.8" />
-      <module name="poc-message-idempotency-demo" target="1.8" />
+      <module name="poc-stream-extensions-demo" target="1.8" />
       <module name="schema-registry-server" target="1.8" />
       <module name="sink" target="1.8" />
       <module name="source" target="1.8" />

@@ -5,7 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/common-models/common-models.iml" filepath="$PROJECT_DIR$/common-models/common-models.iml" />
       <module fileurl="file://$PROJECT_DIR$/duplicate-processor/duplicate-processor.iml" filepath="$PROJECT_DIR$/duplicate-processor/duplicate-processor.iml" />
       <module fileurl="file://$PROJECT_DIR$/enrich-processor/enrich-processor.iml" filepath="$PROJECT_DIR$/enrich-processor/enrich-processor.iml" />
-      <module fileurl="file://$PROJECT_DIR$/poc-message-idempotency-demo.iml" filepath="$PROJECT_DIR$/poc-message-idempotency-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/poc-stream-extensions-demo.iml" filepath="$PROJECT_DIR$/poc-stream-extensions-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/schema-registry-server/schema-registry-server.iml" filepath="$PROJECT_DIR$/schema-registry-server/schema-registry-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/sink/sink.iml" filepath="$PROJECT_DIR$/sink/sink.iml" />
       <module fileurl="file://$PROJECT_DIR$/source/source.iml" filepath="$PROJECT_DIR$/source/source.iml" />
