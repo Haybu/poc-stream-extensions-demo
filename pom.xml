@@ -82,9 +82,11 @@
 	<modules>
 		<module>common-models</module>
 		<module>source</module>
-		<module>processor</module>
+		<module>duplicate-processor</module>
+		<module>enrich-processor</module>
 		<module>sink</module>
 		<module>schema-registry-server</module>
+		<module>web-service</module>
 	</modules>
 
 </project>

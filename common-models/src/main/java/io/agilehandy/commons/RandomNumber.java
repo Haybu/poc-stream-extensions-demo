@@ -13,41 +13,20 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.agilehandy.commons.models;
+package io.agilehandy.commons;
 
-import java.io.Serializable;
-
-import com.fasterxml.jackson.annotation.JsonInclude;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import java.util.Random;
 
 /**
  * @author Haytham Mohamed
  **/
+public class RandomNumber {
 
-@Data
-@NoArgsConstructor
-@JsonInclude(JsonInclude.Include.NON_NULL)
-public class Person implements Serializable {
-
-	int id;
-
-	String name;
-
-	String status;
-
-	String department;
-
-	String role;
-
-	@Override
-	public String toString() {
-		return new StringBuffer("[ id: ").append(id)
-				.append(", name: ").append(name)
-				.append(", status: ").append(status)
-				.append(", department: ").append(department)
-				.append(", role: ").append(role)
-				.append(" ]").toString();
+	public static int range(int min, int max) {
+		if (min >= max) {
+			throw new IllegalArgumentException("max must be greater than min");
+		}
+		return new Random().nextInt(max - min) + min;
 	}
 
 }

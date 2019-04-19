@@ -13,41 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.agilehandy.commons.models;
-
-import java.io.Serializable;
-
-import com.fasterxml.jackson.annotation.JsonInclude;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+package io.agilehandy.commons.exceptions;
 
 /**
  * @author Haytham Mohamed
  **/
+public class DepartmentNotFoundException extends RuntimeException  {
 
-@Data
-@NoArgsConstructor
-@JsonInclude(JsonInclude.Include.NON_NULL)
-public class Person implements Serializable {
-
-	int id;
-
-	String name;
-
-	String status;
-
-	String department;
-
-	String role;
-
-	@Override
-	public String toString() {
-		return new StringBuffer("[ id: ").append(id)
-				.append(", name: ").append(name)
-				.append(", status: ").append(status)
-				.append(", department: ").append(department)
-				.append(", role: ").append(role)
-				.append(" ]").toString();
+	public DepartmentNotFoundException(String message) {
+		super.addSuppressed(new Throwable(message));
 	}
-
 }

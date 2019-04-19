@@ -2,21 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eb1a3d61-534a-4d10-8728-0d125cd8c54e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_avro_avro_1_8_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_avro_avro_1_8_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_snappy_snappy_java_1_1_7_1.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-models/src/main/java/io/agilehandy/commons/RandomNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-models/src/main/java/io/agilehandy/commons/exceptions/DepartmentNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-models/src/main/java/io/agilehandy/commons/exceptions/RoleNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/enrich-processor/src/main/java/io/agilehandy/enrich/DepartmentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/enrich-processor/src/main/java/io/agilehandy/enrich/EnrichProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/enrich-processor/src/main/java/io/agilehandy/enrich/RoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-service/src/main/java/io/agilehandy/web/DepartmentsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-service/src/main/java/io/agilehandy/web/RolesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-models/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common-models/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common-models/src/main/java/io/agilehandy/commons/models/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-models/src/main/java/io/agilehandy/commons/models/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/processor/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/processor/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/processor/src/main/java/com/example/processor/DuplicateMessageProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/processor/src/main/java/com/example/processor/DuplicateMessageProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/processor/src/main/java/com/example/processor/ProcessorApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/processor/src/main/java/com/example/processor/ProcessorApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/processor/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/processor/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sink/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sink/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sink/src/main/java/com/example/sink/SinkApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/sink/src/main/java/com/example/sink/SinkApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sink/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/sink/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/source/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/src/main/java/com/example/source/SourceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/source/src/main/java/com/example/source/SourceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/source/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/processor/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/processor/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/processor/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/processor/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/processor/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/processor/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/processor/src/main/java/com/example/processor/DuplicateMessageProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/processor/src/main/java/com/example/processor/ProcessorApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/processor/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/processor/src/test/java/com/example/processor/DemoApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/src/main/java/com/example/source/PersonGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/source/src/main/java/com/example/source/PersonGenerator.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/sink/target/" />
@@ -24,49 +36,26 @@
     <ignored path="$PROJECT_DIR$/processor/target/" />
     <ignored path="$PROJECT_DIR$/common-models/target/" />
     <ignored path="$PROJECT_DIR$/schema-registry-server/target/" />
+    <ignored path="$PROJECT_DIR$/external-dummy-service/target/" />
+    <ignored path="$PROJECT_DIR$/web-service/target/" />
+    <ignored path="$PROJECT_DIR$/duplicate-processor/target/" />
+    <ignored path="$PROJECT_DIR$/enrich-processor/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/processor/src/main/resources/application.yml">
+        <entry file="file://$PROJECT_DIR$/enrich-processor/src/main/java/io/agilehandy/enrich/EnrichProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/processor/src/main/java/com/example/processor/DuplicateMessageProcessor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="443">
-              <caret line="54" column="35" lean-forward="true" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/src/main/java/com/example/source/SourceApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/src/main/java/com/example/source/PersonGenerator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="94">
-              <caret line="35" column="40" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
+            <state relative-caret-position="365">
+              <caret line="44" column="41" selection-start-line="44" selection-start-column="41" selection-end-line="44" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -77,17 +66,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common-models/src/main/java/io/agilehandy/commons/models/Person.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="192">
+              <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/src/main/java/com/example/source/PersonSource.java">
+        <entry file="file://$PROJECT_DIR$/source/src/main/java/com/example/source/PersonGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="52" column="20" lean-forward="true" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
+            <state relative-caret-position="258">
+              <caret line="37" column="28" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -96,37 +85,66 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/processor/pom.xml">
+        <entry file="file://$PROJECT_DIR$/common-models/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="482">
-              <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
+            <state relative-caret-position="428">
+              <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/src/main/resources/application.yml">
+        <entry file="file://$PROJECT_DIR$/enrich-processor/src/main/java/io/agilehandy/enrich/DepartmentService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+            <state relative-caret-position="456">
+              <caret line="55" column="37" selection-start-line="55" selection-start-column="37" selection-end-line="55" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#956#957#0" expanded="true" />
+                <element signature="e#995#996#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sink/src/main/java/com/example/sink/SinkApplication.java">
+        <entry file="file://$PROJECT_DIR$/web-service/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="22">
+              <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web-service/src/main/java/io/agilehandy/web/DepartmentsController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="41" column="1" lean-forward="true" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sink/src/main/resources/application.yml">
+        <entry file="file://$PROJECT_DIR$/enrich-processor/src/main/java/io/agilehandy/enrich/EnrichProcessorApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+            <state relative-caret-position="242">
+              <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/enrich-processor/src/main/java/io/agilehandy/enrich/RoleService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="48" column="34" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -152,9 +170,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/common-models/pom.xml" />
         <option value="$PROJECT_DIR$/sink/src/main/java/com/example/sink/IdempotencyConfiguration.java" />
-        <option value="$PROJECT_DIR$/source/src/main/java/com/example/source/PersonGenerator.java" />
         <option value="$PROJECT_DIR$/schema-registry-server/pom.xml" />
         <option value="$PROJECT_DIR$/schema-registry-server/src/main/java/io/agilehandy/registry/SchemaRegistryServerApplication.java" />
         <option value="$PROJECT_DIR$/schema-registry-server/src/main/resources/application.yml" />
@@ -162,15 +178,36 @@
         <option value="$PROJECT_DIR$/sink/src/main/java/com/example/sink/SinkApplication.java" />
         <option value="$PROJECT_DIR$/source/src/main/java/com/example/source/SourceApplication.java" />
         <option value="$PROJECT_DIR$/source/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/source/pom.xml" />
         <option value="$PROJECT_DIR$/sink/pom.xml" />
-        <option value="$PROJECT_DIR$/processor/pom.xml" />
         <option value="$PROJECT_DIR$/sink/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/source/src/main/java/com/example/source/PersonSource.java" />
         <option value="$PROJECT_DIR$/processor/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/common-models/src/main/java/io/agilehandy/commons/models/Person.java" />
         <option value="$PROJECT_DIR$/processor/src/main/java/com/example/processor/DuplicateMessageProcessor.java" />
+        <option value="$PROJECT_DIR$/external-dummy-service/pom.xml" />
+        <option value="$PROJECT_DIR$/web-service/src/main/java/io/agilehandy/web/Controller.java" />
+        <option value="$PROJECT_DIR$/web-service/src/main/java/io/agilehandy/web/NoDepartmentFoundException.java" />
+        <option value="$PROJECT_DIR$/processor/pom.xml" />
+        <option value="$PROJECT_DIR$/duplicate-processor/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/enrich-processor/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/common-models/src/main/java/io/agilehandy/commons/utils/RandomNumber.java" />
+        <option value="$PROJECT_DIR$/common-models/src/main/java/io/agilehandy/commons/exceptions/DepartmentNotFoundException.java" />
+        <option value="$PROJECT_DIR$/web-service/pom.xml" />
+        <option value="$PROJECT_DIR$/web-service/src/main/java/io/agilehandy/web/WebController.java" />
+        <option value="$PROJECT_DIR$/enrich-processor/src/main/java/io/agilehandy/enrich/Departments.java" />
+        <option value="$PROJECT_DIR$/enrich-processor/src/main/java/io/agilehandy/enrich/EnrichProcessorApplication.java" />
+        <option value="$PROJECT_DIR$/enrich-processor/src/main/java/io/agilehandy/enrich/Department.java" />
+        <option value="$PROJECT_DIR$/enrich-processor/pom.xml" />
+        <option value="$PROJECT_DIR$/web-service/src/main/java/io/agilehandy/web/RolesController.java" />
+        <option value="$PROJECT_DIR$/common-models/pom.xml" />
+        <option value="$PROJECT_DIR$/common-models/src/main/java/io/agilehandy/commons/models/Person.java" />
+        <option value="$PROJECT_DIR$/source/src/main/java/com/example/source/PersonGenerator.java" />
+        <option value="$PROJECT_DIR$/web-service/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/enrich-processor/src/main/java/io/agilehandy/enrich/DepartmentService.java" />
+        <option value="$PROJECT_DIR$/enrich-processor/src/main/java/io/agilehandy/enrich/RoleService.java" />
+        <option value="$PROJECT_DIR$/enrich-processor/src/main/java/io/agilehandy/enrich/EnrichProcessor.java" />
+        <option value="$PROJECT_DIR$/web-service/src/main/java/io/agilehandy/web/DepartmentsController.java" />
       </list>
     </option>
   </component>
@@ -183,21 +220,11 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="source" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="source" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
-      </expand>
+      <expand />
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1680" />
     <option name="height" value="980" />
@@ -218,25 +245,25 @@
             <path>
               <item name="poc-message-idempotency-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="poc-message-idempotency-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="common-models" type="462c0819:PsiDirectoryNode" />
+              <item name="enrich-processor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="poc-message-idempotency-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="poc-message-idempotency-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="common-models" type="462c0819:PsiDirectoryNode" />
+              <item name="enrich-processor" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="poc-message-idempotency-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="poc-message-idempotency-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="common-models" type="462c0819:PsiDirectoryNode" />
+              <item name="enrich-processor" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="poc-message-idempotency-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="poc-message-idempotency-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="common-models" type="462c0819:PsiDirectoryNode" />
+              <item name="enrich-processor" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -244,7 +271,7 @@
             <path>
               <item name="poc-message-idempotency-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="poc-message-idempotency-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="common-models" type="462c0819:PsiDirectoryNode" />
+              <item name="enrich-processor" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -253,7 +280,63 @@
             <path>
               <item name="poc-message-idempotency-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="poc-message-idempotency-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="common-models" type="462c0819:PsiDirectoryNode" />
+              <item name="enrich-processor" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="io" type="462c0819:PsiDirectoryNode" />
+              <item name="agilehandy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="poc-message-idempotency-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="poc-message-idempotency-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="enrich-processor" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="io" type="462c0819:PsiDirectoryNode" />
+              <item name="agilehandy" type="462c0819:PsiDirectoryNode" />
+              <item name="enrich" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="poc-message-idempotency-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="poc-message-idempotency-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="web-service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="poc-message-idempotency-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="poc-message-idempotency-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="web-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="poc-message-idempotency-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="poc-message-idempotency-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="web-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="poc-message-idempotency-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="poc-message-idempotency-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="web-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="poc-message-idempotency-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="poc-message-idempotency-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="web-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="io" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="poc-message-idempotency-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="poc-message-idempotency-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="web-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -263,217 +346,13 @@
             <path>
               <item name="poc-message-idempotency-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="poc-message-idempotency-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="common-models" type="462c0819:PsiDirectoryNode" />
+              <item name="web-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="io" type="462c0819:PsiDirectoryNode" />
               <item name="agilehandy" type="462c0819:PsiDirectoryNode" />
-              <item name="commons" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="poc-message-idempotency-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="poc-message-idempotency-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="common-models" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="io" type="462c0819:PsiDirectoryNode" />
-              <item name="agilehandy" type="462c0819:PsiDirectoryNode" />
-              <item name="commons" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="poc-message-idempotency-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="poc-message-idempotency-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="processor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="poc-message-idempotency-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="poc-message-idempotency-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="processor" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="poc-message-idempotency-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="poc-message-idempotency-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="processor" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="poc-message-idempotency-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="poc-message-idempotency-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="processor" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="poc-message-idempotency-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="poc-message-idempotency-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="processor" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="poc-message-idempotency-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="poc-message-idempotency-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="processor" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="poc-message-idempotency-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="poc-message-idempotency-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="processor" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="processor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="poc-message-idempotency-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="poc-message-idempotency-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="processor" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="poc-message-idempotency-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="poc-message-idempotency-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="sink" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="poc-message-idempotency-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="poc-message-idempotency-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="sink" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="poc-message-idempotency-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="poc-message-idempotency-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="sink" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="poc-message-idempotency-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="poc-message-idempotency-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="sink" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="poc-message-idempotency-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="poc-message-idempotency-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="sink" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="poc-message-idempotency-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="poc-message-idempotency-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="sink" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="poc-message-idempotency-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="poc-message-idempotency-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="sink" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="sink" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="poc-message-idempotency-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="poc-message-idempotency-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="sink" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="poc-message-idempotency-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="poc-message-idempotency-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="source" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="poc-message-idempotency-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="poc-message-idempotency-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="source" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="poc-message-idempotency-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="poc-message-idempotency-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="source" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="poc-message-idempotency-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="poc-message-idempotency-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="source" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="poc-message-idempotency-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="poc-message-idempotency-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="source" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="poc-message-idempotency-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="poc-message-idempotency-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="source" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="poc-message-idempotency-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="poc-message-idempotency-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="source" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="source" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="poc-message-idempotency-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="poc-message-idempotency-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="source" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -490,19 +369,24 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555687895607" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555700703228" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="io.agilehandy.commons" />
       <recent name="com.example.sink" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="io.agilehandy.enrich" />
+      <recent name="io.agilehandy.commons.exceptions" />
+      <recent name="io.agilehandy.web" />
       <recent name="io.agilehandy.commons.ext" />
     </key>
   </component>
@@ -524,7 +408,21 @@
     </option>
     <option name="contentProportion" value="0.21366459" />
   </component>
-  <component name="RunManager" selected="Spring Boot.SinkApplication">
+  <component name="RunManager" selected="Application.DuplicateProcessorApplication">
+    <configuration name="DuplicateProcessorApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.processor.DuplicateProcessorApplication" />
+      <module name="duplicate-processor" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.processor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -537,16 +435,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CommonsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="common-models" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="io.agilehandy.commons.CommonsApplication" />
+    <configuration name="DuplicateProcessorApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="duplicate-processor" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.processor.DuplicateProcessorApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProcessorApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="processor" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.processor.ProcessorApplication" />
+    <configuration name="EnrichProcessorApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="enrich-processor" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.agilehandy.enrich.EnrichProcessorApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -572,6 +470,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WebServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="web-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.agilehandy.commons.exceptions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.agilehandy.web.WebServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="TestNG">
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <properties />
@@ -580,6 +491,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.WebServiceApplication" />
+        <item itemvalue="Application.DuplicateProcessorApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -591,16 +508,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1555634706806</updated>
-      <workItem from="1555634709889" duration="14772000" />
+      <workItem from="1555634709889" duration="21192000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14772000" />
+    <option name="totallyTimeSpent" value="21192000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1680" height="980" extended-state="0" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Image Layers" />
@@ -610,7 +526,7 @@
       <window_info id="Web" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26312578" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Run Dashboard" visible="true" weight="0.42959183" />
+      <window_info active="true" anchor="bottom" id="Run Dashboard" visible="true" weight="0.45945945" />
       <window_info anchor="bottom" id="Spring" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Docker" />
@@ -622,7 +538,7 @@
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.45306122" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33571428" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -672,13 +588,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common-models/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/schema-registry-server/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -714,34 +623,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
-          <caret line="37" column="30" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="36" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sink/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/processor/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
@@ -763,13 +644,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common-models/src/main/java/io/agilehandy/commons/models/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/src/main/java/com/example/source/SourceApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -777,20 +651,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/src/main/java/com/example/source/PersonGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="35" column="40" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/src/main/java/com/example/source/PersonSource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="356">
-          <caret line="52" column="20" lean-forward="true" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
+          <caret line="52" column="20" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -804,10 +668,216 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/external-dummy-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/processor/src/main/java/com/example/processor/DuplicateMessageProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="443">
-          <caret line="54" column="35" lean-forward="true" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
+          <caret line="54" column="35" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/processor/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/enrich-processor/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/duplicate-processor/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/duplicate-processor/src/main/java/com/example/processor/DuplicateMessageProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="33" selection-start-line="33" selection-end-line="34" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/duplicate-processor/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="42" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="85" column="32" selection-start-line="85" selection-start-column="32" selection-end-line="85" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common-models/src/main/java/io/agilehandy/commons/RandomNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common-models/src/main/java/io/agilehandy/commons/exceptions/DepartmentNotFoundException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sink/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="42" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/retry/spring-retry/1.2.4.RELEASE/spring-retry-1.2.4.RELEASE-sources.jar!/org/springframework/retry/annotation/Retryable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-95">
+          <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/enrich-processor/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="43" column="45" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/duplicate-processor/src/main/java/com/example/processor/DuplicateProcessorApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="19" column="9" selection-start-line="12" selection-end-line="12" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-service/src/main/java/io/agilehandy/web/WebServiceApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-service/src/main/java/io/agilehandy/web/RolesController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/enrich-processor/src/main/java/io/agilehandy/enrich/EnrichProcessorApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common-models/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common-models/src/main/java/io/agilehandy/commons/models/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/src/main/java/com/example/source/PersonGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="37" column="28" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-service/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.5.RELEASE/spring-web-5.1.5.RELEASE-sources.jar!/org/springframework/web/client/HttpServerErrorException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="100" column="24" selection-start-line="100" selection-start-column="24" selection-end-line="100" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/enrich-processor/src/main/java/io/agilehandy/enrich/DepartmentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="55" column="37" selection-start-line="55" selection-start-column="37" selection-end-line="55" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#956#957#0" expanded="true" />
+            <element signature="e#995#996#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/enrich-processor/src/main/java/io/agilehandy/enrich/RoleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="48" column="34" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/enrich-processor/src/main/java/io/agilehandy/enrich/EnrichProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="44" column="41" selection-start-line="44" selection-start-column="41" selection-end-line="44" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-service/src/main/java/io/agilehandy/web/DepartmentsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="41" column="1" lean-forward="true" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

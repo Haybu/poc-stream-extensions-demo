@@ -1,0 +1,24 @@
+server:
+  port: 0
+
+spring:
+  application:
+    name: enrich_processor_stream
+  cloud:
+    stream:
+      bindings:
+        input:
+          destination: demo-enrich
+          group: enrich-processor-group
+        output:
+          destination: demo-sink
+          contentType: application/*+avro
+      kafka:
+        brokers: localhost
+        defaultBrokerPort: 9092
+      schema:
+        avro:
+          dynamicSchemaGenerationEnabled: true
+      schemaRegistryClient:
+        endpoint: http://localhost:8111
+        cached: true

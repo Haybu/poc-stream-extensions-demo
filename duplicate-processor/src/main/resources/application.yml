@@ -3,15 +3,15 @@ server:
 
 spring:
   application:
-    name: processor_stream
+    name: duplicate_processor_stream
   cloud:
     stream:
       bindings:
         input:
           destination: demo-source
-          group: processor-group
+          group: dup-processor-group
         output:
-          destination: demo-sink
+          destination: demo-enrich
           contentType: application/*+avro
       kafka:
         brokers: localhost

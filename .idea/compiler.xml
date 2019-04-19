@@ -7,28 +7,34 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="common-models" />
-        <module name="processor" />
+        <module name="duplicate-processor" />
+        <module name="enrich-processor" />
         <module name="schema-registry-server" />
         <module name="sink" />
         <module name="source" />
+        <module name="web-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="common-models" target="1.8" />
+      <module name="duplicate-processor" target="1.8" />
+      <module name="enrich-processor" target="1.8" />
       <module name="poc-message-idempotency-demo" target="1.8" />
-      <module name="processor" target="1.8" />
       <module name="schema-registry-server" target="1.8" />
       <module name="sink" target="1.8" />
       <module name="source" target="1.8" />
+      <module name="web-service" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="common-models" options="-parameters" />
-      <module name="processor" options="-parameters" />
+      <module name="duplicate-processor" options="-parameters" />
+      <module name="enrich-processor" options="-parameters" />
       <module name="schema-registry-server" options="-parameters" />
       <module name="sink" options="-parameters" />
       <module name="source" options="-parameters" />
+      <module name="web-service" options="-parameters" />
     </option>
   </component>
 </project>

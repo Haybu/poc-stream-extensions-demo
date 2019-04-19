@@ -13,41 +13,30 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.agilehandy.commons.models;
+package io.agilehandy.web;
 
-import java.io.Serializable;
 
-import com.fasterxml.jackson.annotation.JsonInclude;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import io.agilehandy.commons.exceptions.DepartmentNotFoundException;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @author Haytham Mohamed
  **/
 
-@Data
-@NoArgsConstructor
-@JsonInclude(JsonInclude.Include.NON_NULL)
-public class Person implements Serializable {
+@RestController
+public class DepartmentsController {
 
-	int id;
+	private final String[] DEPARTMENTS = {"Sales", "Marketing", "IT", "Finance", "HR"};
 
-	String name;
-
-	String status;
-
-	String department;
-
-	String role;
-
-	@Override
-	public String toString() {
-		return new StringBuffer("[ id: ").append(id)
-				.append(", name: ").append(name)
-				.append(", status: ").append(status)
-				.append(", department: ").append(department)
-				.append(", role: ").append(role)
-				.append(" ]").toString();
+	@GetMapping("/departments/{id}")
+	public String getDepartment(@PathVariable int id) {
+		if (id > DEPARTMENTS.length - 1) {
+			throw new DepartmentNotFoundException("No Department found with id " + id);
+		}
+		return DEPARTMENTS[id];
 	}
 
 }

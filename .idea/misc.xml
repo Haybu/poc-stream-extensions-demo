@@ -5,6 +5,8 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/schema-registry-server/pom.xml" />
+        <option value="$PROJECT_DIR$/external-dummy-service/pom.xml" />
+        <option value="$PROJECT_DIR$/enrich-processor/pom.xml" />
       </list>
     </option>
   </component>

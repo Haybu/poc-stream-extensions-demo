@@ -15,10 +15,8 @@
  */
 package com.example.source;
 
-import java.util.Random;
-
-
 import io.agilehandy.commons.models.Person;
+import io.agilehandy.commons.RandomNumber;
 
 import org.springframework.stereotype.Component;
 
@@ -33,25 +31,20 @@ public class PersonGenerator {
 
 	public Person getPerson() {
 		Person person = new Person();
-		person.setId(generateNumber(1, 5));
+		person.setId(RandomNumber.range(1, 5));
 		person.setName(pickName());
 		person.setStatus(pickStatus());
+		person.setDepartment("NONE");
+		person.setRole("NONE");
 		return person;
 	}
 
 	private String pickName() {
-		return NAMES[generateNumber(0, NAMES.length)];
+		return NAMES[RandomNumber.range(0, NAMES.length)];
 	}
 
 	private String pickStatus() {
-		return STATUS[generateNumber(0, STATUS.length)];
-	}
-
-	private int generateNumber(int min, int max) {
-		if (min >= max) {
-			throw new IllegalArgumentException("max must be greater than min");
-		}
-		return new Random().nextInt(max - min) + min;
+		return STATUS[RandomNumber.range(0, STATUS.length)];
 	}
 
 }
