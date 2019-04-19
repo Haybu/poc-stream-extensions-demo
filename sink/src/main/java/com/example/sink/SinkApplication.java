@@ -12,6 +12,7 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean
 import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.cloud.stream.annotation.StreamListener;
 import org.springframework.cloud.stream.messaging.Sink;
+import org.springframework.cloud.stream.schema.client.EnableSchemaRegistryClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.integration.annotation.IdempotentReceiver;
 import org.springframework.integration.annotation.ServiceActivator;
@@ -24,6 +25,7 @@ import org.springframework.messaging.handler.annotation.Payload;
 
 @SpringBootApplication
 @EnableBinding(Sink.class)
+//@EnableSchemaRegistryClient
 public class SinkApplication {
 
 	Logger log = LoggerFactory.getLogger(SinkApplication.class);
@@ -32,21 +34,15 @@ public class SinkApplication {
 		SpringApplication.run(SinkApplication.class, args);
 	}
 
+	/**
+	 * Nothing, but to print the message out to verify no duplicate message is passed through.
+	 *
+	 * @param person
+	 */
 	@StreamListener(Sink.INPUT)
 	public void handle(Person person) {
 		log.info(person.toString());
 	}
-
-	//@Bean
-	//@ServiceActivator(inputChannel = Sink.INPUT)
-	//@IdempotentReceiver("idempotentReceiverInterceptor")
-	public MessageHandler handle() {
-		return message -> {
-			log.info(message.getPayload().toString());
-		};
-	}
-
-
 
 }
 

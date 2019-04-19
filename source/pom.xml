@@ -28,6 +28,11 @@
 		</dependency>
 
 		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-stream-schema</artifactId>
+		</dependency>
+
+		<dependency>
 			<groupId>io.agilehandy</groupId>
 			<artifactId>common-models</artifactId>
 			<version>0.0.1-SNAPSHOT</version>

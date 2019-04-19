@@ -75,10 +75,11 @@
 	</pluginRepositories>
 
 	<modules>
+		<module>common-models</module>
 		<module>source</module>
 		<module>processor</module>
 		<module>sink</module>
-		<module>common-models</module>
+		<module>schema-registry-server</module>
 	</modules>
 
 </project>

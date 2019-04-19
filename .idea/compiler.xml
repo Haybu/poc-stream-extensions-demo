@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="common-models" />
         <module name="processor" />
+        <module name="schema-registry-server" />
         <module name="sink" />
         <module name="source" />
       </profile>
@@ -16,6 +17,7 @@
       <module name="common-models" target="1.8" />
       <module name="poc-message-idempotency-demo" target="1.8" />
       <module name="processor" target="1.8" />
+      <module name="schema-registry-server" target="1.8" />
       <module name="sink" target="1.8" />
       <module name="source" target="1.8" />
     </bytecodeTargetLevel>
@@ -24,6 +26,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="common-models" options="-parameters" />
       <module name="processor" options="-parameters" />
+      <module name="schema-registry-server" options="-parameters" />
       <module name="sink" options="-parameters" />
       <module name="source" options="-parameters" />
     </option>

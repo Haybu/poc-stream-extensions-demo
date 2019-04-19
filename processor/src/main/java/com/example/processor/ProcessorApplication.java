@@ -14,6 +14,7 @@ import org.springframework.cloud.function.json.JacksonMapper;
 import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.cloud.stream.annotation.StreamListener;
 import org.springframework.cloud.stream.messaging.Processor;
+import org.springframework.cloud.stream.schema.client.EnableSchemaRegistryClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.integration.annotation.IdempotentReceiver;
 import org.springframework.integration.annotation.Transformer;
@@ -32,23 +33,11 @@ import org.springframework.messaging.handler.annotation.SendTo;
 import org.springframework.util.MimeTypeUtils;
 
 @SpringBootApplication
-@EnableBinding(Processor.class)
+//@EnableSchemaRegistryClient
 public class ProcessorApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ProcessorApplication.class, args);
-	}
-
-	@Bean
-	@Transformer(inputChannel = Processor.INPUT, outputChannel = Processor.OUTPUT)
-	@IdempotentReceiver("idempotentReceiverInterceptor")
-	public MessageProcessor<Message<?>> handleDuplicates() {
-		return message -> {
-			MessageBuilder<?> builder = MessageBuilder.fromMessage(message)
-					.copyHeaders(message.getHeaders())
-					.setHeader(MessageHeaders.CONTENT_TYPE, MimeTypeUtils.APPLICATION_JSON);
-			return builder.build();
-		};
 	}
 
 	@Bean

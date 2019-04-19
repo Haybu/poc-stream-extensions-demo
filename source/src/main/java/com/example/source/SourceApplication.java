@@ -13,6 +13,7 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.cloud.stream.app.annotation.PollableSource;
 import org.springframework.cloud.stream.messaging.Source;
+import org.springframework.cloud.stream.schema.client.EnableSchemaRegistryClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.integration.annotation.InboundChannelAdapter;
 import org.springframework.integration.annotation.Poller;
@@ -26,26 +27,11 @@ import org.springframework.scheduling.Trigger;
 import org.springframework.scheduling.support.PeriodicTrigger;
 
 @SpringBootApplication
-@EnableBinding(Source.class)
+//@EnableSchemaRegistryClient
 public class SourceApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SourceApplication.class, args);
-	}
-
-	@Autowired
-	PersonGenerator personGenerator;
-
-	@Bean
-	@InboundChannelAdapter(value = Source.OUTPUT,
-			poller = @Poller(fixedRate = "1000", maxMessagesPerPoll = "1"))
-	public MessageSource<Person> timerMessageSource() {
-		return () -> {
-			Person person = personGenerator.getPerson();
-			String key =
-					person.getId() + person.getName().toLowerCase() + person.getStatus().toLowerCase();
-			return MessageBuilder.withPayload(person).setHeader("person-key", key).build();
-		};
 	}
 
 }
