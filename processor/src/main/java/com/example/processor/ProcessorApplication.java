@@ -33,7 +33,7 @@ import org.springframework.messaging.handler.annotation.SendTo;
 import org.springframework.util.MimeTypeUtils;
 
 @SpringBootApplication
-//@EnableSchemaRegistryClient
+@EnableSchemaRegistryClient
 public class ProcessorApplication {
 
 	public static void main(String[] args) {

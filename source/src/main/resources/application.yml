@@ -9,6 +9,12 @@ spring:
       bindings:
         output:
           destination: demo-source
-          contentType: application/json
+          contentType: application/*+avro
       kafka:
         brokers: localhost:9092
+      schema:
+        avro:
+          dynamicSchemaGenerationEnabled: true
+      schemaRegistryClient:
+        endpoint: http://localhost:8111
+        cached: true

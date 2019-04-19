@@ -15,6 +15,8 @@
  */
 package io.agilehandy.commons.models;
 
+import java.io.Serializable;
+
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -24,7 +26,7 @@ import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor
-public class Person {
+public class Person implements Serializable {
 
 	int id;
 

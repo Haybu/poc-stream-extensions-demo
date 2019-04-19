@@ -50,7 +50,8 @@ public class DuplicateMessageProcessor {
 		return message -> {
 			MessageBuilder<?> builder = MessageBuilder.fromMessage(message)
 					.copyHeaders(message.getHeaders())
-					.setHeader(MessageHeaders.CONTENT_TYPE, MimeTypeUtils.APPLICATION_JSON);
+					//.setHeader(MessageHeaders.CONTENT_TYPE, MimeTypeUtils.APPLICATION_JSON)
+					;
 			return builder.build();
 		};
 	}

@@ -27,7 +27,7 @@ import org.springframework.scheduling.Trigger;
 import org.springframework.scheduling.support.PeriodicTrigger;
 
 @SpringBootApplication
-//@EnableSchemaRegistryClient
+@EnableSchemaRegistryClient
 public class SourceApplication {
 
 	public static void main(String[] args) {

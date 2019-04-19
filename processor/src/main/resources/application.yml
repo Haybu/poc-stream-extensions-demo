@@ -9,10 +9,16 @@ spring:
       bindings:
         input:
           destination: demo-source
-          contentType: application/json
+          group: processor-group
         output:
           destination: demo-sink
-          contentType: application/json
+          contentType: application/*+avro
       kafka:
         brokers: localhost
         defaultBrokerPort: 9092
+      schema:
+        avro:
+          dynamicSchemaGenerationEnabled: true
+      schemaRegistryClient:
+        endpoint: http://localhost:8111
+        cached: true

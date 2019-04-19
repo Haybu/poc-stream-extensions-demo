@@ -25,7 +25,7 @@ import org.springframework.messaging.handler.annotation.Payload;
 
 @SpringBootApplication
 @EnableBinding(Sink.class)
-//@EnableSchemaRegistryClient
+@EnableSchemaRegistryClient
 public class SinkApplication {
 
 	Logger log = LoggerFactory.getLogger(SinkApplication.class);

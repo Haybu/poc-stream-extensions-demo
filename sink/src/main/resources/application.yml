@@ -9,7 +9,13 @@ spring:
       bindings:
         input:
           destination: demo-sink
-          contentType: application/json
+          group: sink-group
       kafka:
         brokers: localhost
         defaultBrokerPort: 9092
+      schema:
+        avro:
+          dynamicSchemaGenerationEnabled: true
+      schemaRegistryClient:
+        endpoint: http://localhost:8111
+        cached: true
