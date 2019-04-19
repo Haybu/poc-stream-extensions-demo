@@ -33,7 +33,7 @@ public class PersonGenerator {
 
 	public Person getPerson() {
 		Person person = new Person();
-		person.setId(generateNumber(1, 10));
+		person.setId(generateNumber(1, 5));
 		person.setName(pickName());
 		person.setStatus(pickStatus());
 		return person;

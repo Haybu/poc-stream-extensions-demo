@@ -19,6 +19,7 @@ import org.springframework.integration.channel.NullChannel;
 import org.springframework.integration.handler.advice.IdempotentReceiverInterceptor;
 import org.springframework.integration.selector.MetadataStoreSelector;
 import org.springframework.messaging.MessageHandler;
+import org.springframework.messaging.handler.annotation.Header;
 import org.springframework.messaging.handler.annotation.Payload;
 
 @SpringBootApplication
@@ -45,31 +46,7 @@ public class SinkApplication {
 		};
 	}
 
-	//@Bean
-	//@ConditionalOnMissingBean
-	public IdempotentReceiverInterceptor idempotentReceiverInterceptor() {
-		MetadataStoreSelector selector = new MetadataStoreSelector(
-				m -> {
-					String payload = m.getPayload().toString();
-					ObjectMapper mapper = new ObjectMapper();
-					try {
-						Person person = mapper.readValue(payload, Person.class);
-						return person.getId() + person.getName() + person.getStatus();
-					}
-					catch (IOException e) {
-						e.printStackTrace();
-					}
-					return m.getPayload().toString();
-				}
-		);
 
-		IdempotentReceiverInterceptor idempotentReceiverInterceptor =
-				new IdempotentReceiverInterceptor(selector);
-
-		idempotentReceiverInterceptor.setDiscardChannel(new NullChannel());
-
-		return idempotentReceiverInterceptor;
-	}
 
 }
 
