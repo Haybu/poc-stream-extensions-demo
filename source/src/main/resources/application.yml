@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: source_stream
+  cloud:
+    stream:
+      bindings:
+        output:
+          destination: demo-source
+          contentType: application/json
+      kafka:
+        brokers: localhost:9092
