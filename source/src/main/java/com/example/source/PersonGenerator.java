@@ -26,7 +26,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class PersonGenerator {
 
-	private final String[] NAMES = {"Lok", "Derek", "Ann"};
+	private final String[] NAMES = {"Lok", "Derek", "Anns"};
 	private final String[] STATUS = {"NEW", "PENDING", "APPROVED", "CANCELLED"};
 
 	public Person getPerson() {

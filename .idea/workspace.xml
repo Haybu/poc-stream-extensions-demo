@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="648f54e6-7cdb-4735-8c4b-b71f16ec0195" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/src/main/java/com/example/source/PersonGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/source/src/main/java/com/example/source/PersonGenerator.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/enrich-processor/target/" />
     <ignored path="$PROJECT_DIR$/sink/target/" />
@@ -20,14 +20,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="110">
+              <first_editor relative-caret-position="102">
                 <caret line="5" column="83" selection-start-line="5" selection-start-column="83" selection-end-line="5" selection-end-column="83" />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/src/main/java/com/example/source/PersonGenerator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="233">
+              <caret line="28" column="58" selection-start-line="28" selection-start-column="58" selection-end-line="28" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -46,10 +55,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/source/src/main/java/com/example/source/PersonGenerator.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="y" value="23" />
     <option name="width" value="1680" />
     <option name="height" value="980" />
@@ -62,7 +72,73 @@
     <panes>
       <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="poc-stream-extensions-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="poc-stream-extensions-demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="poc-stream-extensions-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="poc-stream-extensions-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="poc-stream-extensions-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="poc-stream-extensions-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="poc-stream-extensions-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="poc-stream-extensions-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="poc-stream-extensions-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="poc-stream-extensions-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="poc-stream-extensions-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="poc-stream-extensions-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="poc-stream-extensions-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="poc-stream-extensions-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="poc-stream-extensions-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="poc-stream-extensions-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -163,12 +239,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1555701211983</updated>
-      <workItem from="1555701215375" duration="1250000" />
+      <workItem from="1555701215375" duration="1391000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1250000" />
+    <option name="totallyTimeSpent" value="1391000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="980" extended-state="0" />
@@ -222,10 +298,17 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="110">
+          <first_editor relative-caret-position="102">
             <caret line="5" column="83" selection-start-line="5" selection-start-column="83" selection-end-line="5" selection-end-column="83" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/src/main/java/com/example/source/PersonGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="28" column="58" selection-start-line="28" selection-start-column="58" selection-end-line="28" selection-end-column="58" />
         </state>
       </provider>
     </entry>
