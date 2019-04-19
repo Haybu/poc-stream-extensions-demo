@@ -1,13 +1,30 @@
-# Demo to run Spring Cloud Stream using Kafka binder
+# Demo to run Spring Cloud Stream with Avro Schema and Idempotency using Kafka binder
 
+This demo uses Spring Cloud Stream to illustrate message schema evolution 
+and idempotency interception pattern 
+to detect duplicate messages. The stream use case is for illustration 
+purpose only, it uses Kafka as a binder message broker. 
 
+To run the stream applications, clone this repository, build all modules using
+```mvn clean install``` then follow the steps below.
 
 1- Run kafka docker containers using the attached script 
 ```shell
  > ./runKafka.sh
 ```
-2- This sample contains self contained source, processor and sink application, run each one in a separate terminal window using
+2- This sample contains self contained a source, two processors and a sink applications, 
+run each one in a separate terminal window using the command below.
+
+Run the web-service and schema-registry-service first
+
 ```shell
  > mvn spring-boot:run
 ```
-3- Sink application console is expected to log messages out.
+3- Sink application console is expected to log messages out. No duplicate message
+with same combination of (id, name, status) should be written out to the console.
+
+
+The web-service application is expected to throw exception that the enricher processor
+application would recover from.
+
+Message Avro schemas are dynamically auto-generated. 
